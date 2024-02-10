@@ -1,7 +1,9 @@
 ROUND_DOWN = 1
 ROUND_UP = 2
 ROUND = 3
-program = int(input("Floor round .1\nCeiling round .2\nRound to the nearest whole number .3\n"))
+program = int(input("Floor round .1\n"
+                    "Ceiling round .2\n"
+                    "Round to the nearest whole number .3\n"))
 number = float(input("Write the number you want to round\n"))
 decimal_part = number * 10 % 10
 if program == ROUND_DOWN:
@@ -18,3 +20,4 @@ elif program == ROUND:
         print(int(number) + 1)
 else:
     print("ERROR")
+    
